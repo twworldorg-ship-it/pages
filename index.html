@@ -387,6 +387,19 @@ window.smartsupp||(function(d) {
                         </div>
 
                         <button onclick="openChatWidget()" class="px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition flex items-center gap-2 group/btn">
+                            <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '6b4c28de3f646f398a14ec04f7cf4b35640e8ff5';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+
                             Start Chat
                             <svg class="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -1421,19 +1434,7 @@ window.smartsupp||(function(d) {
                     ${imageUrls.length > 0 ? `<div class="flex justify-end mb-2">${renderImagesHtml(imageUrls)}</div>` : ''}
                     ${msg.message ? `
                         <div class="rounded-2xl rounded-tr-md px-4 py-3 shadow-md" style="background-color: ${chatWidgetConfig.clientMessageBg};">
-                            <p class="text-sm break-words whitespace-pre-wrap leading-relaxed" style="color: ${chatWidgetConfig.clientMessageText};">${<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '6b4c28de3f646f398a14ec04f7cf4b35640e8ff5';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
-</script>
-<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
-(msg.message)}</p>
+                            <p class="text-sm break-words whitespace-pre-wrap leading-relaxed" style="color: ${chatWidgetConfig.clientMessageText};">${(msg.message)}</p>
                         </div>
                     ` : ''}
                 </div>
